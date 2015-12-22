@@ -45,7 +45,13 @@ do
 	theme_location="$THEMES_LOCATION/$theme"
 
 	if [ -d ${theme_location} ]; then  
-		updateTheme $theme_location	
+		# Check the theme is an existing Git repo
+		cd ${theme_location}
+		if [ -d ".git" ]; then
+			updateTheme $theme_location	
+		else
+			echo " Warning: Theme '$theme' was not updated as it is not a Git repository. Did you install it manually?"
+		fi
 	else  
 		installTheme $theme $repo	
 	fi
