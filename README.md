@@ -20,7 +20,7 @@ This will run a container that will install the default [Casper](https://github.
 
 ### Installing multiple themes
 
-Additional themes can be passed as arguments, in the form <themename>:<githubrepo>.
+Additional themes can be passed as arguments, in the form 'themename:githubrepo'.
 
 For example to explicitly specify the Casper theme:
 
