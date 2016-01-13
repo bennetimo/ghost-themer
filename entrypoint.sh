@@ -33,7 +33,7 @@ do
 
 	# Check we have two parts, the theme folder and github repo
 	if [ ${#PARTS[@]} -ne 2 ]; then
-		echo " ERROR: Cannot parse theme config: '$theme_config' (format is <themefolder>:<githubrepo>) - Skipping installing/updating this theme."
+		echo " ERROR: Cannot parse theme config: '$theme_config' (format is themefolder:githubrepo) - Skipping installing/updating this theme."
 		continue
 	fi
 
